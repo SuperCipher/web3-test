@@ -69,7 +69,7 @@ def main(iteration: int = typer.Argument(1)):
             print("--------------------------------------" + "Iterations: "
                 + str(i) + "--------------------------------------")
             contract_address_str_4kb = deploy_4kb()
-            print("contract_address_str_4kb")
+            print("contract_address_str_4kb", contract_address_str_4kb)
             greeter = prepare_contract_4kb(w3,acct, contract_address_str_4kb)
 
             ### benchmark start
