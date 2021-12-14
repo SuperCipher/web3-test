@@ -1,6 +1,6 @@
 
-for i in range(4):
-    string_i = str(i)
+for i in range(20):
+    string_i = "1_"+str(i)
     print(f"""@internal
 @view
 def getLevel{string_i}(_bidId: uint256, _sender: address, _randSeed: uint256) -> int128:
